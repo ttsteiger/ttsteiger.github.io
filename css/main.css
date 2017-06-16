@@ -23,33 +23,36 @@ html {
   color: black;
 }
 
-/* main box */
-.header {
-
-}
-
 /* project grid */
-body {
-  margin: 40px;
-}
-
 .wrapper1 {
-  display:grid;
-  grid-template-columns: 30% 30% 30%;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 600px 600px 600px;
   grid-gap: 10px;
 }
 
-.project {
-  padding: 20px;
-  font-size: 150%;
+.container {
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
 }
+
+.wrapper1 h4 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.wrapper1 img {
+  margin-left: 10px;
+  margin-top: -20px;
+}
+
+.description {
+  margin-left: 220px;
+}
+
 
 /* footer grid */
 .wrapper2 {
   display:grid;
-  grid-template-columns: 200px 200px;
-}
-
-.footercol {
-
+  grid-template-columns: 200px 100px 200px;
 }
