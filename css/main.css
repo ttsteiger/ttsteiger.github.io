@@ -6,6 +6,7 @@ html {
 .topnav {
   background-color: #333;
   overflow: hidden;
+  width: 1820px;
 }
 
 .topnav a {
@@ -27,7 +28,7 @@ html {
 .wrapper1 {
   margin: 5px;
   display: grid;
-  grid-template-columns: 450px 450px;
+  grid-template-columns: 600px 600px 600px;
   grid-gap: 10px;
 }
 
@@ -56,4 +57,15 @@ html {
 .wrapper2 {
   display:grid;
   grid-template-columns: 200px 100px 200px;
+}
+
+/* about me styling */
+.aboutme div {
+  float: left;
+}
+
+.aboutme p {
+  width: 800px;
+  margin-left: 5px;
+  padding-top: 20px;
 }
