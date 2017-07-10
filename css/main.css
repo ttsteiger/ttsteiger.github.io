@@ -27,7 +27,7 @@ html {
 .wrapper1 {
   margin: 5px;
   display: grid;
-  grid-template-columns: 600px 600px 600px;
+  grid-template-columns: 450px 450px;
   grid-gap: 10px;
 }
 
