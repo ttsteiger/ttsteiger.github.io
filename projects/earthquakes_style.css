@@ -1,0 +1,136 @@
+/* style.css */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font: 12px sans-serif;
+  color: #555555;
+}
+
+body h1 {
+	font: 30px sans-serif;
+}
+
+.leftpane {
+	width: 20%;
+	height: 100%;
+	margin: 0;
+	float: left;
+	padding-left: 50px;
+}
+
+.leftpane p {
+	font: 16px sans-serif;
+}
+
+.rightpane {
+	width: 75%;
+	height: 100%;
+	margin: 0;
+	float: left;
+}
+
+.rightpane h2 {
+	text-align: center;
+	
+}
+
+.animation-button {
+	margin: 0;
+	padding: 0;
+}
+
+.checkbox-grid {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+	width: 300px;
+}
+
+.checkbox-grid ul {
+	margin: 0;
+	padding: 0;
+}
+
+.checkbox-grid li {
+    display: block;
+    float: left;
+    width: 75px;
+    padding: 0;
+    margin: 0;
+}
+
+.select-buttons {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.display-selection-button {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+
+circle {
+    opacity: 0.4;
+}
+
+.bubbles circle:hover {
+	stroke: black;
+}
+
+button {
+    background-color: #555555;
+    border: 2px solid #555555;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+	background-color: white;
+    color: black;
+}
+
+.d3-tip {
+	line-height: 1;
+	padding: 6px;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	border-radius: 4px;
+	font-size: 12px;
+}
+ 
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+	box-sizing: border-box;
+	display: inline;
+	font-size: 10px;
+	width: 100%;
+	line-height: 1;
+	color: rgba(0, 0, 0, 0.8);
+	content: "\25BC";
+	position: absolute;
+	text-align: center;
+}
+
+/* Style northward tooltips specifically */
+.d3-tip.n:after {
+	margin: -2px 0 0 0;
+	top: 100%;
+	left: 0;
+}

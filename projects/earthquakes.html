@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Earthquakes</title>
+  <meta charset="utf-8">
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="d3-tip.js"></script>
+  <script src="earthquakes.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+  <link rel="stylesheet" type="text/css" href="earthquakes_style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="leftpane">
+      
+      <h1>Earthquakes</h1>
+
+      <!-- introductory text section -->
+      <p>
+        The <a href="https://earthquake.usgs.gov/contactus/golden/neic.php)">
+        National Earthquake Information Center</a> (NEIC) collects and publishes 
+        data of all the earthquakes occuring around the earth. The data set
+        visualized on this page contains all the earthquakes between 1965 and 
+        2016 that had a magnitude higher than 5.5 on the Richter scale.
+        <br><br>
+        Most earthquakes align with the tectonic boundaries. Based on the
+        earthquake magnitudes at these locations one can also clearly identify
+        the different types of tectonic boundaries that occur. For example, 
+        the extremely active zone along the western coast of South America can 
+        be explained by the converging boundary formed by the Nazca and South 
+        American plate.
+        <br><br>
+        Run the animation and look at the earthquakes for each individual year 
+        or display a custom selection of years.
+        <br><br>
+      </p>
+
+      <!-- animtation button -->
+      <div class="animation-button">
+        <button type="button" onclick="run_animation()">Run Animation</button>
+      </div>
+      
+      <!-- placeholder div for checkbox grid -->
+      <div class="checkbox-grid" style="overflow:auto"></div>
+
+      <!-- select/unselect all buttons-->
+      <div class="select-buttons">
+        <button type="button" onclick="set_all_checkboxes(true)">Select All</button>
+        <button type="button" onclick="set_all_checkboxes(false)">Unselect All</button>
+      </div>
+
+      <!-- display selection button -->
+      <div class="display-selection-button">
+        <button type="button" onclick="display_selection()">Display Selection</button>
+      </div>
+
+    </div>
+        
+    <div class="rightpane">
+      <!-- place holder for map header -->
+      <h2><br></h2>
+    </div>
+  </div> 
+
+  <script type="text/javascript">
+        /*
+          Use D3 to load the GeoJSON file
+          */
+        d3.json("world_countries.json", draw);
+  </script>
+
+</body>
+</html>
