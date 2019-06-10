@@ -1,139 +1,178 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <!-- Custom CSS -->
+     <link href="css/main.css" rel="stylesheet">
+
     <title>Titian Steiger - Portfolio</title>
   </head>
-  
+
   <body>
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Titian Steiger</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Projects
+                <span class="sr-only">(current)</span>
+              </a>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+          <h1 class="my-4">Projects
+            <small>Data Analytics & Visualization Portfolio</small>
+          </h1>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="img/earthquakes_thumbnail.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Interactive Visualization of Earthquake Locations using <a href="https://d3js.org/">D3.js</a></h2>
+              <p class="card-text">This is the first data visulaization I have created using D3.js. Earthquake data published by the <a href="https://earthquake.usgs.gov/contactus/golden/neic.php">NEIC</a> is plotted on an interactive worldmap and an animation shows occurrences over time.</p>
+              <a href="projects/earthquakes.html" class="btn btn-primary">Read More &rarr;</a>
+              <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p6" class="btn btn-primary">GitHub &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on December 4, 2017
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="img/enron_thumbnail.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Identifying Persons of Interest in the Enron Corpus Dataset using Machine Learning</h2>
+              <p class="card-text">By training and testing various machine learning classifiers on public Enron financial and email data, I built a model that can reliably identify Enron employees who were more likely to be involved in fraudulent activities that lead to the Enron accounting scandal.</p>
+              <a href="projects/enron_report.html" class="btn btn-primary">Read More &rarr;</a>
+              <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p5" class="btn btn-primary">GitHub &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on September 10, 2017
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="img/wine_thumbnail.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Exploratory Data Analysis of Wine Quality in <a href="https://www.r-project.org/">R</a></h2>
+              <p class="card-text">In this project, I used R and applied exploratory data analysis techniques to examine distributions, outliers and relationships between variables in a data set containing physicochemical properties of red and white wines. I identified the parameters that influence wine quality the most and created a simple regression model to predict wine density based on the concentrations of its ingredients.</p>
+              <a href="projects/wine_report.html" class="btn btn-primary">Read More &rarr;</a>
+              <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p4" class="btn btn-primary">GitHub &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on July 20, 2017
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="img/osm_thumbnail.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Wrangling of <a href="https://www.openstreetmap.org">OpenStreetMap</a> Data from Zürich</h2>
+              <p class="card-text">Data munging techniques were used to assess the quality of OpenStreetMap data from Zürich. Afterwards, the data was cleaned programmatically, a storage schema was developed and the data transferred to an SQL database. The data was explored by querrying the different tables and some interesting findings about the area were gathered.</p>
+              <a href="projects/osm_report.html" class="btn btn-primary">Read More &rarr;</a>
+              <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p3" class="btn btn-primary">GitHub &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on June 10, 2017
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="img/titanic_thumbnail.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Analysis of Titanic Survival Data</h2>
+              <p class="card-text">I conducted a thorough data analysis of passenger data from the Titanic sinking in 1912. By exploring the features found in the set I wanted to find out which of them influenced passenger survival the most and which passenger groups were most likely to survive the horrible disaster.</p>
+              <a href="projects/titanic_report.html" class="btn btn-primary">Read More &rarr;</a>
+              <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p2" class="btn btn-primary">GitHub &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on May 12, 2017
+            </div>
+          </div>
+
+          <!-- Blog Post -->
+          <div class="card mb-4">
+            <img class="card-img-top" src="img/stroop_thumbnail.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Statistical Investigation of the Stroop Effect</h2>
+              <p class="card-text">Using descriptive statistics I looked at the results of a Stroop experiment. I set up a hypothesis about the outcome and performed a Student's t-test to assess it on a statistical level.</p>
+              <a href="projects/stroop_report.html" class="btn btn-primary">Read More &rarr;</a>
+              <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p1" class="btn btn-primary">GitHub &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on April 5, 2017
+            </div>
+          </div>
+
+
+<!-- Pagination
+          <ul class="pagination justify-content-center mb-4">
+            <li class="page-item">
+              <a class="page-link" href="#">&larr; Older</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Newer &rarr;</a>
+            </li>
+          </ul>
+//-->
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Side Widget</h5>
+            <div class="card-body">
+              You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Optional JavaScript -->
     
-    <div class="header">
-      <h1>Portfolio</h1>
-    </div>
-
-    <div class="wrapper1">
-      
-      <div class="container 6">
-        <h4>Interactive Visualization of Earthquake Locations using D3.js</h4>
-        <p style="float: left;">
-          <img class="thumb" src="img/earthquakes_thumbnail.png"  height="200px" width="200px">
-        </p>
-        <p class="description">December 4, 2017</p>
-        <p class="description">
-          ...
-        </p>
-        <p class="description"><a href="projects/earthquakes.html">Report</a> &emsp; 
-          <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p6">GitHub</a></p>
-      </div>
-
-      <div class="container 5">
-        <h4>Identifying Persons of Interest in the Enron Corpus Dataset using Machine Learning</h4>
-        <p style="float: left;">
-          <img class="thumb" src="img/enron_thumbnail.png"  height="200px" width="200px">
-        </p>
-        <p class="description">September 10, 2017</p>
-        <p class="description">
-          By training and testing various machine learning classifiers on public Enron financial and email data
-          I built a model that can reliably identify Enron employees who are more like to have committed fraud
-          that lead to the Enron accounting scandal.
-        </p>
-        <p class="description"><a href="projects/enron_report.html">Report</a> &emsp; 
-          <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p5">GitHub</a></p>
-      </div>
-
-    	<div class="container 4">
-    	  <h4>Exploratory Data Analysis of Wine Quality in R</h4>
-      	<p style="float: left;">
-          <img class="thumb" src="img/wine_thumbnail.png"  height="200px" width="200px">
-        </p>
-        <p class="description">July 20, 2017</p>
-        <p class="description">
-          In this project, I used R and applied exploratory data analysis techniques to examine distributions, 
-          outliers and relationships between variables in a data set containing physicochemical properties of red and white wines. I 
-          identified the parameters that influence wine quality the most and created a simple regression model to predict wine density 
-          based on the concentrations of its ingredients.
-        </p>
-        <p class="description"><a href="projects/wine_report.html">Report</a> &emsp; 
-          <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p4">GitHub</a></p>
-      </div>
-      
-    	<div class="container 3">
-    	  <h4>Wrangling of OpenStreetMap Data from Zürich</h4>
-        <p style="float: left;">
-          <img class="thumb" src="img/osm_thumbnail.png" height="200px" width="200px">
-        </p>
-        <p class="description">June 10, 2017</p>
-        <p class="description">
-          Data munging techniques were used to assess the quality of OpenStreetMap data from Zürich. Afterwards,
-          the data was cleaned programmatically, a storage schema was developed and the data transferred to an SQL database. The data 
-          was explored by querrying the different tables and some interesting findings about the area were gathered.
-        </p>
-        <p class="description"><a href="projects/osm_report.html">Report</a> &emsp;
-          <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p3">GitHub</a></p>
-    	</div>
-      
-    	<div class="container 2">
-    	  <h4>Analysis of Titanic Survival Data</h4>
-        <p style="float: left;">
-          <img class="thumb" src="img/titanic_thumbnail.png" height="200px" width="200px">
-        </p>
-        <p class="description">May 12, 2017</p>
-        <p class="description">
-          I conducted a thorough data analysis of passenger data from the Titanic sinking in 1912. By exploring
-          the features found in the set I wanted to find out which of them influenced passenger survival the most and which
-          passenger groups were most likely to survive the horrible disaster.
-        </p>
-        <p class="description"><a href="projects/titanic_report.html">Report</a> &emsp;
-          <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p3">GitHub</a></p>
-    	</div>
-      
-    	<div class="container 1">
-    	  <h4>Statistical Investigation of the Stroop Effect</h4>
-        <p style="float: left;">
-          <img class="thumb" src="img/stroop_thumbnail.png" height="200px" width="200px">
-        </p>
-        <p class="description">April 5, 2017</p>
-        <p class="description">
-          Using descriptive statistics I looked at the results of a Stroop experiment. I set up a hypothesis
-          about the outcome and performed a Student's t-test to assess it on a statistical level.
-        </p>
-        <p class="description"><a href="projects/stroop_report.html">Report</a> &emsp;
-          <a href="https://github.com/ttsteiger/Udacity_DAND/tree/master/DAND_p1">GitHub</a></p>
-    	</div>
-      
-    </div>
-
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
-
-  <footer> 
-    <hr align="left" width="1820px">
-    <div class="wrapper2">
-      <div>
-        <p>Titian Steiger</p>
-        <p><a href="mailto:titian.steiger@gmail.com">titian.steiger@gmail.com</a>
-      </div>
-
-      <div>
-        <p>
-          <a href="https://www.linkedin.com/in/titian-steiger/">
-            <i class="fa fa-linkedin-square" style="font-size:42px;color:grey"></i>	
-          </a>
-          <a href="https://github.com/ttsteiger">
-            <i class="fa fa-github" style="font-size:42px;color:grey"></i>
-          </a>
-        </p>
-      </div>
-      <div>
-      	<p>Titian's portfolio page.</p>
-      </div>
-    </div>
-  </footer>
-  
 </html>
