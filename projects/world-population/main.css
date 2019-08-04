@@ -1,0 +1,178 @@
+.body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.column {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 20px;
+}
+
+.left {
+  width: 48%;
+}
+
+.right {
+  width: 45%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.line {
+	fill: none;
+	stroke: none;
+}
+
+.label {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.hover-label{
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.leader-line {
+	stroke-width: 0.8;
+	stroke-dasharray: 2,2;
+}
+
+.axis line{
+	stroke: #808080;
+	stroke-opacity: 0.3;
+}
+
+.axis path{
+	stroke: #808080;
+	opacity: 0.3;
+}
+
+.axis text{
+	fill: #808080;
+	opacity: 1.0;
+}
+
+.axis .tick line{
+  visibility:hidden;
+}
+
+.grid line {
+	stroke: #808080;
+	stroke-opacity: 0.3;
+	shape-rendering: crispEdges
+ }
+ 
+ .grid path {
+	stroke-width: 0;
+ }
+
+.legend {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.legend-title {
+	fill: #808080;
+	font-size: 18px;
+	text-anchor: middle;
+	alignment-baseline: hanging;
+}
+
+.legend-rect {
+	fill: #BEBEBE;
+	rx: 5px;
+}
+
+.legend-rect-label {
+		font-size: 15px;
+		fill: #808080;
+	}
+
+	.select-container {
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.select-position-div{
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+.select-div{
+	position: relative;
+	display: inline-block;
+}
+
+.select-div select {
+	outline: none;
+	-webkit-appearance: none;
+	display: block;
+	padding: 0.3em 4.0em 0.3em 0.8em;
+	margin: 0;
+
+	transition: border-color 0.2s;
+	border: 2px solid #BEBEBE;
+	border-radius: 5px;
+
+	background: #fff;
+	color: #808080;
+	line-height: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: inherit;
+}
+
+.select-description {
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: #808080;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+		margin-bottom: 0%;
+}
+
+.select-div .arr {
+	background: #fff;
+	bottom: 5px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 50px;
+	pointer-events: none;
+}
+
+.select-div .arr:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 24px;
+	margin-top: -5px;
+	pointer-events: none;
+	border-top: 10px solid #BEBEBE;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+}
+
+.select-div .arr:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 28px;
+	margin-top: -5px;
+	pointer-events: none;
+	border-top: 6px solid #fff;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
+
+.income-option {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+	  <meta charset="UTF-8">
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	  <link href="css/main.css" rel="stylesheet">
+	  <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+	  <script type="text/javascript" src="scripts/labeler.js"></script>
+	</head>
+
+	<body>
+		<div class="row">
+			<div class="column left">
+  				<h1>How the World Population Changed During the 21st Century</h1>
+
+  				<p> 
+  					The information used for this visualization is openly available through <a href="https://data.worldbank.org/indicator/SP.POP.TOTL?end=2018&start=2000">World Bank's</a> data hub. The set aggregates population counts and estimates from governmental census offices. After excluding entries with missing values and those with a 2010 population below 10M I ended up with complete timeseries for 76 countries. More details about the data cleaning and transformation can be found in this <a href="https://github.com/ttsteiger/d3-projects/blob/master/world-population/data_cleaning.ipynb">Python Notebook</a>.<br><br>
+
+  					<b>How to read it:</b> Each line of the graph represents the change in a country's population since 2000. The line thicknes depicts the population value within the individual years. The dropdown selection highlights countries that share the same income group.<br><br> 
+
+  					To avoid label overlap for crowded slections, they were positioned with <a href="https://github.com/tinker10/D3-Labeler">D3-Labeler</a> a plug-in that uses simulated annealing for automatic placement.<br>
+  				</p>
+
+  				<h2>Interesting Observations</h2>
+  				<p>
+  					The fastest growing population can be found in Niger that almost doubled over the last 18 years. On the other side of the spectrum, Romania lost almost 15% of its residents. The chart clearly shows the overall trend - the world population is growing fast. Browsing through the income categories indicates negative correlation between wealth and population growth:
+  					<ul>
+  						<li>
+  							<b>High Income:</b> 
+  							Most states in this category grew somewhere between 0 and 20%. Only a few outliers are present. Hungary, Poland and Greece are tho only countries with negative growth rates and their population declines can mainly be traced back to young citizens emigrating. Saudi Arabia and Australia are the two entries that outpace the other ones. Saudi Arabia's population grew by almost 60% during this century. A large portion can be attributed to immigrants from neighbouring countries seeking economic opportunity. They make up almost 37% of the total population according to a <a href="https://www.cia.gov/library/publications/resources/the-world-factbook/geos/sa.html">UN Report</a> from 2017. One can observe an unusual behaviour in Germany's data. The decade-long population decrease was halted by waves of immigration starting in the early 2010s.
+  						</li>
+  						<li>
+  							<b>Upper Middle Income:</b>
+  							A large portion of these countries are spread between growth rates of 5 and 30%. Despite a decade of bloodshed leading to violent deaths and mass exodus, the population of Iraq has increased by more than 60% since 2000. Their culture encourages big families and the average women gives birth to <a href="https://www.unfpa.org/data/IQ">4.2 babies</a>. The number of residents have staganted in Russia and Cuba during this century. Romania, the country with the steepest drop of more than -10% also falls into this category. Low birth rates and large migration waves to richer countries put their economic growth at risk.
+  						</li>
+  						<li>
+  							<b>Lower Middle Income:</b>
+  							Most countries in this group end year 2017 with a population growth of 10-60%. Angola tops the list with a total growth of more than 80%. Due to rich natural resources it has high economic potential but is still stuggling to recover from a almost 30-year old civil war. As of 2018 <a href="https://www.indexmundi.com/angola/demographics_profile.html">48% of the 30.4 million population was under 15 years old and only 2% were age 65 and up</a>. Also the next 7 entries all lie on the African continent. The Ukraine is the only state in this category with a decline in residents, almost -10% in 2017. Struggling with bad living conditions and an ongoing war the government has introduced financial assistance programs for new parents to halt depopulation.
+  						</li>
+  						<li>
+  							<b>Low Income:</b>
+  							Almost all high growth countries fall into this category. Besides Afghanistan and Yemen, various sub Saharan African regions grew by more than 60%. The line for Syria reflects the impact of the civilian war that started in 2011 and since then has reversed the population growth acceleration.
+  						</li>
+  					</ul>
+  				</p>
+  			</div>
+  			<div class="column right">
+  				<div class="graph-container"></div>
+  			</div>
+  			
+		</div>
+
+		<script type="text/javascript" src="scripts/world_pop.js"></script>
+
+	</body>
